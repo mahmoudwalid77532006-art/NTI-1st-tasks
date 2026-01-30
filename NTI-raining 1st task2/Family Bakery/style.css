@@ -1,0 +1,384 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(./drew-coffman-1872.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.navbar {
+  position: fixed;   /* يفضل ثابت فوق */
+  top: 0;
+  width: 100%;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+  background-color: transparent; /* شيل الخلفية وخليها شفافة */
+  box-shadow: none;              /* شيل الظل */
+}
+
+.navbar .logo {
+  height: 50px;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.navbar ul li {
+  font-family: "Alegreya Sans", sans-serif;
+  font-size: 17px;
+  color: #fff; /* النص أبيض علشان يبان فوق الصورة */
+  cursor: pointer;
+}
+.welcome h2{
+    font-family: "Alegreya Sans", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+    line-height: 41px;
+}
+.welcome h1{
+    font-family: Alegreya, serif;
+    font-style: normal;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    font-size: 76px;
+    line-height: 91px;
+}
+.welcome{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    padding-top: 150px;
+}
+.welcome p{
+    font-family: "Alegreya Sans", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: rgba(255, 255, 255,0.92);
+    font-size: 24px;
+    line-height: 45px;
+}
+.buttons{
+    display: flex;
+    gap: 10px;
+    margin-top: 50px;
+}
+.welcome .learn button{
+    font-family: "Alegreya Sans", sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 15px 35px;
+    color: #2d1b0d;
+    font-weight: 600;
+    border-radius: 7px;
+    margin: 0 10px;
+    background-color: #f1bc7c;
+    border: 2px solid #121212;
+    display: inline-block;
+}
+
+.welcome .learn button:hover {
+    transition: 0.5s;
+    background-color:  rgba(0, 0, 0, 0.734);
+    color: #eee;
+}
+
+.welcome .contact button{
+    font-family: "Alegreya Sans", sans-serif;
+    font-size: 18px;
+    text-decoration: none;
+    color: white;
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    border-radius: 7px;
+    padding: 15px 35px;
+    background: none;
+    display: inline-block;
+}
+
+.welcome .contact button:hover {
+    transition: 0.5s;
+    background-color: white;
+    color: black;
+}
+.section {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 50px;
+    padding: 50px;
+    margin-bottom: 80px;
+}
+.section img {
+    width: 600px;
+    height: auto;
+    margin-left: 50px;
+}
+.text h2 {
+    font-family: Alegreya, serif;
+    font-weight: 200;
+    color: rgb(48, 48, 48);
+    font-size: 32px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+.text p {
+    font-family: "Alegreya Sans", sans-serif;
+    font-weight: 400;
+    color: rgb(104, 104, 104);
+    font-size: 17px;
+    line-height: 1.9;
+    margin-top: 20px;
+}
+.text{
+    margin-left: 30px;
+}
+.features {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-family: "Alegreya Sans", sans-serif;
+    font-size: 16px;
+    color: #333;
+    margin-top: 30px;
+}
+.feature {
+    display: flex;
+    align-items: center;
+}
+.icon-circle {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(196, 189, 179, 0.2);
+    margin-right: 12px;
+    border: 1px solid rgb(142, 119, 84);
+}
+.icon-circle i {
+    color: rgb(142, 119, 84);
+    font-size: 18px;
+}
+.middle img{
+    width: 550px;
+    margin-right: 80px;
+}
+.middle{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(240, 240, 240, 0.8);
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 30px;
+    margin-bottom: 80px;
+}
+.middle h2{
+    margin-left: 60px;
+    width: 700px;
+}
+.middle p{
+    margin-left: 60px;
+    width: 450px;
+}
+.Baking {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.Baking > div {
+    flex: 1;
+    max-width: 30%;
+    text-align: center;
+}
+.Baking img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+.BakingSection {
+    text-align: center;
+    max-width: 1200px;
+    margin: auto;
+    margin-bottom: 80px;
+}
+.BakingSection h4 {
+    margin-bottom: 10px;
+    margin-top: 50px;
+    font-family: Alegreya, serif;
+    font-weight: 100;
+    color: rgb(48, 48, 48);
+    font-size: 20px;
+}
+.BakingSection > p {
+    margin-bottom: 30px;
+    font-family: "Alegreya Sans", sans-serif;
+    font-weight: 400;
+    color: rgb(104, 104, 104);
+    font-size: 17px;
+    line-height: 1.9;
+}
+.contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 0 40px;
+    margin-bottom: 80px;
+}
+.contact .text {
+    flex: 1;
+}
+.contact iframe {
+    flex: 1;
+    max-width: 500px;
+}
+.contact .text h2 {
+    margin-bottom: 15px;
+}
+.contact .text p,
+.contact-info p {
+    font-family: "Alegreya Sans", sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 32px;
+    color: rgb(104, 104, 104);
+}
+.contact-info {
+    font-size: 16px;
+    color: #333;
+    line-height: 2.2;
+}
+.icon-circle {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #8e7754;
+    margin-right: 10px;
+}
+.icon-circle i {
+    color: #fff;
+    font-size: 16px;
+}
+.footer {
+  background-color: #403d38;
+  color: #969696;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 80px;
+}
+
+.footer-top {
+  padding: 60px 0;
+}
+
+.footer-columns {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  gap: 40px;
+}
+
+.footer .column {
+  flex: 1;
+}
+
+.footer .column h3 {
+  color: #fff;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.footer .column p {
+  font-size: 14px;
+  line-height: 1.8;
+  margin-bottom: 10px;
+}
+
+.footer .column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer .column ul li {
+  font-size: 14px;
+  padding: 12px 0;
+  border-bottom: 1px solid #4a4742;
+  color: #969696;
+}
+
+.footer .column i {
+  margin-right: 10px;
+  color: #c1ab84;
+}
+
+.footer-bottom {
+  background-color: #353330;
+  text-align: center;
+  padding: 40px 0;
+}
+
+.footer-bottom h2 {
+  color: #fff;
+  font-size: 36px;
+  margin-bottom: 15px;
+  font-family: "Georgia", serif;
+}
+
+.footer-bottom p {
+  font-size: 13px;
+  color: #777;
+  margin-bottom: 20px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.social-icons a {
+  width: 40px;
+  height: 40px;
+  background-color: #484540;
+  color: #8c8a86;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  background-color: #c1ab84;
+  color: #fff;
+}
+
+@media (max-width: 900px) {
+  .footer-columns {
+    flex-direction: column;
+  }
+}
