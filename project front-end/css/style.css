@@ -1,0 +1,1145 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+/* .header{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+} */
+#header {
+position: relative;
+background-image:  linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url(https://nti-project.vercel.app/assets/img/hero-bg.jpg);
+background-size: cover;
+background-position: center;
+height: 100vh;
+}
+
+#home {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 15px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+margin-top: 10px;
+  background-color: transparent; /* مختفية في أول الصفحة */
+  box-shadow: none;
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease;
+}
+
+/* لما يحصل scroll */
+#home.scrolled {
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-top: 0px; 
+  
+}
+
+
+
+
+#home ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+#home ul li {
+  font-family: "Alegreya Sans", sans-serif;
+  font-size: 17px;
+  color: #fff; /* النص أبيض علشان يبان فوق الصورة */
+  cursor: pointer;
+}
+
+.welcome h1{
+    font-family: Nunito, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    font-size: 48px;
+    line-height: 58px;
+}
+.welcome{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+.welcome p{
+    font-family: Roboto, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    font-style: normal;
+    font-weight: 400;
+    color: rgba(255, 255, 255,0.92);
+    font-size: 24px;
+    line-height: 36px;
+}
+.welcome button
+{
+text-transform:uppercase;
+width: 183px;
+height: 41px;
+background-color: transparent;
+border-radius: 20px;
+margin-top: 30px;
+color:#fff;
+}
+.welcome button:hover{
+background-color: rgb(228, 60, 92);
+color: #fff;
+}
+
+#about {
+width: 100%;
+height: 100vh;
+background-color:#fff;
+display:flex;
+flex-direction: column;
+align-items: center;
+margin-top:20px;
+}
+
+#about h2 {
+font-family: Roboto, system-ui, -apple-system, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+font-style: normal;
+font-weight: 700;
+font-size: 23px;
+line-height: 18px;
+color: rgb(228, 60, 92);
+}
+#about-title {
+background-color:#fff;
+display:flex;
+flex-direction: row;
+align-items: center;
+margin-top:30px;
+}
+#about h2{
+border-radius: 20px;
+background-color: rgba(228, 60, 92,0.1);
+color:#e43c5c;
+padding:8px 20px;
+margin-left: 10px;
+margin-right: 10px;
+}
+.about-title{
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+}
+
+.about-title .title{
+font-family: Nunito, sans-serif;
+font-style:normal;
+font-Weight:700;
+color:rgb(73, 60, 62);
+font-size:32px;
+line-height : 40px;
+margin-top: 3px;
+word-spacing: 5px;
+}
+.about-title .title2{
+font-family: Nunito, sans-serif;
+font-style:normal;
+font-Weight:700;
+color:rgb(228, 60, 92);
+font-size:32px;
+line-height : 48px;
+}
+.all-descrabition{
+display: flex;
+flex-direction: row;
+justify-content: center;
+margin-top: 40px;
+}
+.left-descrabition{
+display: flex;
+flex-direction: column;
+width:25%;
+margin-left: 25px;
+align-items: center;
+margin-left: 75px;
+}
+.left-descrabition h3{
+font-family: Nunito, sans-serif;
+font-style:normal;
+font-Weight:700;
+color:rgb(73, 60, 62);
+font-size:34px;
+line-height : 41px;
+}
+.left-descrabition .about-btn {
+padding: 8px 30px 9px 30px;
+color:rgb(228, 60, 92);
+border-radius: 50px;
+transition: 0.3s;
+text-transform: uppercase;
+font-weight: 600;
+font-size: 23px;
+display: inline-flex;
+align-items: center;
+border: 2px solid rgb(228, 60, 92);
+background: transparent;
+margin-top: 25px;
+cursor: pointer;
+text-decoration: none;
+size: 50px;
+}
+.left-descrabition .about-btn:hover{
+background-color: rgb(228, 60, 92);
+color: #fff;
+}
+.lorem{
+font-family: Roboto, system-ui, -apple-system, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,;
+font-style:normal;
+font-Weight:400;
+color:rgb(68, 68, 68);
+font-size:23px;
+line-height : 29px;
+margin-top: 23px;
+}
+.col-md-6{
+font-family: Nunito, sans-serif;
+font-style:normal;
+font-Weight:700;
+color:rgb(228, 60, 92);
+font-size:34px;
+line-height : 41px;
+}
+.right-descrabition{
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+width:75%;
+}
+
+.right-descrabition a{
+font-family: Nunito, sans-serif;
+font-style:normal;
+font-Weight:700;
+color:rgb(228, 60, 92);
+font-size:20px;
+line-height : 24px
+}
+.middle-descrabition p{
+font-family: Nunito, sans-serif;
+font-style:normal;
+font-Weight:400;
+color:rgba(87, 72, 75, 0.647);
+font-size:20px;
+line-height : 24px
+}
+.middle-descrabition  {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+width:37.5%;
+}
+.right-descrabition .right-descrabition{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+width:37.5%;
+}
+.right-descrabition .right-descrabition h4{
+font-family: Nunito, sans-serif;
+font-style:normal;
+font-Weight:700;
+color:rgb(228, 60, 92);
+font-size:20px;
+line-height : 24px
+}
+.right-descrabition .right-descrabition p{
+font-family: Nunito, sans-serif;
+font-style:normal;
+font-Weight:400;
+color:rgba(87, 72, 75, 0.647);
+font-size:20px;
+line-height : 24px
+}
+#services{
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+margin-top: 5px;
+}
+#services h2{
+font-family: Roboto, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+font-style:normal;
+font-weight: 700;
+color:rgb(228, 60, 92);
+font-size:19px;
+line-height: 10px;
+border-radius: 20px;
+background-color: rgba(228, 60, 92,0.1);
+color:#e43c5c;
+padding:8px 20px;
+margin-left: 10px;
+margin-right: 10px;
+}
+.about-services{
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+margin-top: 5px;
+}
+
+.check-our{
+font-family: Nunito, sans-serif;
+font-style:normal;
+font-weight:700;
+color:rgb(73, 60, 62);
+font-size:32px;
+line-height:48px;
+text-align: center;
+}
+.Services{
+font-family:Nunito, sans-serif;
+font-style:normal;
+font-weight:700;
+color:rgb(228, 60, 92);
+font-size:32px;
+line-height: 48px;
+text-align: center;
+}
+
+.custom-card {
+position: relative;
+overflow: hidden;
+min-height: 350px;      
+padding: 1.5rem;
+background-color: transparent;
+color:black;
+transition: all 0.2s ease;
+margin-bottom: 25px;
+}
+
+.card-overlay {
+position: absolute;
+bottom: -100%;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(228,60,92,0.9);
+transition: bottom 0.2s ease;
+z-index: 0;
+}
+.custom-card:hover .card-overlay {
+bottom: 0;
+}
+.custom-card i,
+.custom-card h4,
+.custom-card p {
+position: relative;
+z-index: 1;
+}
+.custom-card .icon {
+font-size: 36px;
+color: rgb(228, 60, 92);
+margin-bottom: 20px;
+}
+.custom-card h4 a {
+text-decoration: none;
+color: rgba(31,29,29,0.78);
+font-weight: 700;
+font-size: 25px;
+margin-bottom: 15px;
+font-family: 'Nunito', sans-serif;
+}
+.custom-card p {
+color: rgba(31,29,29,0.68);
+font-weight: 700;
+font-size: 17px;
+margin-top: 15px;
+margin-bottom: 15px;
+font-family: 'Nunito', sans-serif;
+}
+
+.custom-card:hover a,
+.custom-card:hover h4,
+.custom-card:hover i,
+.custom-card:hover p {
+color:#faf4f4;
+}
+
+html {
+scroll-behavior: smooth;
+}
+.container a{
+text-decoration: none;
+font-family:Nunito, sans-serif;
+font-style: normal;
+font-weight:700;
+color: #000000a0;
+font-size:20px;
+line-height: 16px;
+
+}
+.container a:hover{
+color: rgb(228, 60, 92);
+}
+.container .card:hover{
+border: #e43c5c 1px solid;
+}
+body{
+margin: 0;
+font-family: Arial, sans-serif;
+}
+.call-to-action {
+position: relative;
+padding: 100px 0;          
+width: 100%;
+color: #fff;
+overflow: hidden;
+}
+.call-to-action::before {
+content: "";
+position: absolute;
+inset: 0;
+background-image: url('https://nti-project.vercel.app/assets/img/hero-bg.jpg');
+background-size: cover;
+background-position: center;
+background-attachment: fixed;   
+z-index: 1;
+}
+.call-to-action::after {
+content: "";
+position: absolute;
+inset: 0;
+background-color: rgba(0,0,0,0.6);
+z-index: 2;
+}
+.content 
+.call-to-action .container {
+position: relative;
+z-index: 3;
+}
+.text-center p{
+font-family: Roboto, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+font-size: 16px;
+line-height: 24px;
+text-align: center;
+font-weight: 400;
+}
+.text-center h3{
+font-family: Nunito, sans-serif;
+font-style:normal;
+font-Weight:700;
+font-size:28px;
+line-height: 34px;
+text-align: center;
+}
+.text-center a{
+width: 230px;
+height: 60px;
+background-color: transparent;
+border-radius: 30px;
+margin-top: 80px;
+text-align: center;
+text-decoration: none;
+font-family: Nunito, sans-serif;
+}
+.text-center a:hover{
+color:  rgb(228, 60, 92);
+}
+.container.btn{
+width: 230px;
+height: 60px;
+line-height: 60px;   
+background-color: transparent;
+border-radius: 30px;
+border: 2px solid #fff;
+margin-top: 80px;
+text-align: center;
+text-decoration: none;
+font-family: Nunito, sans-serif;
+display: inline-block;
+}
+.container.btn:hover{
+background-color: rgb(228, 60, 92);
+color: #fff;
+}
+.call-to-action .text-center {
+  color:#fff;
+  z-index: 3;
+  position: relative;
+}
+.call-to-action .text-center .btn{
+margin-top: 60px;
+color:#fff;
+border:1px solid #fff;
+text-align: center;
+}
+.call-to-action .text-center .btn:hover{
+background-color: rgb(228, 60, 92);
+}
+/* Portfolio */
+.portfolio-filter button {
+  border: none;
+  background-color: transparent;
+  color: #444;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 8px 20px;
+  margin: 0 5px;
+  border-radius: 50px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.portfolio-filter button.active {
+  background-color: rgb(228, 60, 92);
+  color: #fff;
+}
+
+.portfolio-filter button:hover {
+  background-color: rgb(228, 60, 92);
+  color: #fff;
+}
+
+.portfolio-box {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-item,
+.portfolio-item img {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.portfolio-box img {
+  width: 100%;
+  display: block;
+}
+
+.portfolio-overlay {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 15px 20px;
+  background: rgba(255, 255, 255, 0.95);
+  transform: translateY(100%);
+  transition: 0.4s ease;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.portfolio-overlay .info h4 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #444;
+  margin: 0;
+}
+
+.portfolio-overlay .info p {
+  font-size: 14px;
+  color: #777;
+  margin: 0;
+}
+
+.portfolio-overlay .icons a {
+  color: #444;
+  margin-left: 10px;
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.portfolio-overlay .icons a:hover {
+  color:rgba(228,60,92,0.9);
+}
+
+.portfolio-box:hover .portfolio-overlay {
+  transform: translateY(0);
+}
+.faq-title{
+/* width: 100%;
+height: 100vh; */
+background-color:#fff;
+display:flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+margin-top:20px;
+}
+.faq-title .hII{
+font-family: Nunito, sans-serif;
+font-style:normal;
+font-Weight:700;
+color:rgba(12, 12, 12, 0.711);
+font-size:32px;
+line-height : 48px;
+}
+.faq-title .hii{
+font-family: Nunito, sans-serif;
+font-style:normal;
+font-Weight:700;
+color:rgb(228, 60, 92);
+font-size:32px;
+line-height : 48px;
+}
+#portfolio h2{
+display: flex;
+flex-direction: row;
+border-radius: 20px;
+background-color: rgba(228, 60, 92,0.1);
+color:#e43c5c;
+padding:8px 20px;
+margin: auto;
+line-height: 18px;
+font-family: Roboto, system-ui, -apple-system, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+font-style: normal;
+font-weight: 700;
+font-size: 13px;
+width: 250px;
+}
+.about-portfolio{
+width: 100%;
+height: 100vh;
+background-color:#fff;
+display:flex;
+flex-direction: row;
+justify-content: center;
+margin: top 50px;
+}
+.about-portfolio .title1{
+font-family: Nunito, sans-serif;
+font-style:normal;
+font-Weight:700;
+color:rgb(73 ,60, 62);
+font-size:32px;
+line-height : 48px
+}
+.about-portfolio .title3{
+font-family: Nunito, sans-serif;
+font-style:normal;
+font-Weight:700;
+color:rgb(228, 60, 92);
+font-size:32px;
+line-height : 48px
+}
+#cont-sections{
+width: 100%;
+height: 100vh;
+}
+#cont-sections #sections{
+width: 100%;
+height: 100vh;
+display:flex;
+flex-direction: row;
+justify-content: center;
+margin-top: 0px;
+}
+#cont-sections #sections button{
+width: 110px;
+height: 40px;
+border: none;
+background-color: #fff;
+border-radius: 30px;
+margin-top: 10px;
+font-weight: 500;
+font-size: 15px;
+font-family: Nunito, sans-serif;
+cursor: pointer;
+}
+#cont-sections #sections button h3{
+margin: 0;
+line-height: 40px;
+text-align: center;
+color: #000;
+font-size: 15px;
+font-weight: 500;
+}
+#cont-sections #sections button:hover{
+background: #e43c5c;
+}
+#cont-sections #sections button:hover h3{
+color: #fff;
+}
+.portfolio-filters {
+text-align: center;
+margin-bottom: 20px;
+}
+.filter-btn {
+margin: 5px;
+padding: 10px 20px;
+border: none;
+background: #444;
+color: #fff;
+cursor: pointer;
+transition: background 0.3s;
+}
+.filter-btn:hover,
+.filter-btn.active {
+background:  #e43c5c;
+}
+
+.portfolio-container {
+display: flex;
+flex-wrap: wrap;
+gap: 20px;
+justify-content: center;
+}
+.portfolio-item {
+width: 250px;
+height: 200px;
+overflow: hidden;
+border: 1px solid #ddd;
+background: #fff;
+display: flex;
+align-items: center;
+justify-content: center;
+transition: all 0.3s ease;
+}
+.portfolio-item img {
+max-width: 100%;
+max-height: 100%;
+object-fit: cover;
+}
+.pricing-section {
+max-width: 1000px;
+margin: 0 auto;
+text-align: center;
+}
+.pricing-section h2 {
+margin-bottom: 8px;
+font-weight: 600;
+}
+.pricing-section .highlight {
+color:  #e43c5c;
+font-weight: 700;
+}
+.plans {
+display: flex;
+gap: 20px;
+justify-content: center;
+flex-wrap: wrap;
+margin-top: 30px;
+}
+.plan {
+background: #fff;
+border: 2px solid #ddd;
+border-radius: 10px;
+width: 280px;
+padding: 25px 20px;
+box-shadow: 0 0 12px rgb(0 0 0 / 0.05);
+display: flex;
+flex-direction: column;
+align-items: center;
+transition: border-color 0.3s ease;
+}
+.plan.featured {
+border-color:  #e43c5c;
+}
+.plan-icon {
+background-color:  #e43c5c;
+color: white;
+font-weight: 700;
+font-size: 20px;
+width: 60px;
+height: 60px;
+border-radius: 50%;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-bottom: 20px;
+user-select: none;
+}
+.plan-price {
+font-size: 40px;
+font-weight: 700;
+color:  #e43c5c;
+margin-bottom: 5px;
+}
+.plan-duration {
+font-weight: 400;
+color: #666;
+margin-bottom: 25px;
+}
+ul.features {
+list-style: none;
+padding-left: 0;
+text-align: left;
+width: 100%;
+margin-bottom: 25px;
+}
+ul.features li {
+margin-bottom: 12px;
+position: relative;
+padding-left: 24px;
+color: #444;
+}
+ul.features li::before {
+content: "✓";
+position: absolute;
+left: 0;
+color: #4caf50;
+font-weight: bold;
+}
+button.buy-btn {
+border: 2px solid  #e43c5c;
+background: transparent;
+color:  #e43c5c;
+font-weight: 600;
+padding: 10px 25px;
+border-radius: 25px;
+cursor: pointer;
+transition: all 0.3s ease;
+}
+button.buy-btn:hover {
+background: #e43c5c;
+color: white;
+}
+@media (max-width: 900px) {
+.plans {
+flex-direction: column;
+align-items: center;
+}
+.plan {
+width: 90%;
+max-width: 400px;
+}
+}
+.faq {
+  width: 80%;
+  margin: auto;
+  padding: 60px 0;
+  font-family: Arial, sans-serif;
+}
+.faq-title hI {
+  color: #e43c5c;
+  font-size: 14px;
+  letter-spacing: 1px;
+  background-color: #4f373cad;
+  border-radius: 30px;
+  width: 150px;
+
+}
+.faq-title h2 {
+  font-size: 32px;
+  margin: 10px 0 40px;
+}
+.faq-title h2 span1 {
+  color: #e43c5c;
+}
+.faq-item {
+  border: 1px solid #ddd;
+  margin-bottom: 15px;
+  padding: 15px 20px;
+  border-radius: 4px;
+}
+.faq-item summary {
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  list-style: none;
+  position: relative;
+}
+.faq-item summary::after {
+  content: "›";
+  position: absolute;
+  right: 0;
+  font-size: 20px;
+  transform: rotate(90deg);
+  transition: 0.3s;
+}
+.faq-item[open] summary {
+  color: #e43c5c;
+}
+.faq-item[open] summary::after {
+  transform: rotate(-90deg);
+}
+.faq-item p {
+  margin-top: 15px;
+  color: #555;
+  line-height: 1.6;
+}
+.team-section {
+  background-color: #fff;
+}
+
+.team-member {
+  text-align: center;
+}
+
+.team-img {
+  position: relative;
+  overflow: hidden;
+}
+
+.team-img img {
+  width: 100%;
+  display: block;
+}
+
+/* Overlay */
+.team-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: 0.4s ease;
+}
+
+.team-overlay h4 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.team-overlay span {
+  font-size: 14px;
+  font-style: italic;
+  margin-bottom: 15px;
+}
+
+/* Social icons */
+.team-social a {
+  color: #f2eded;
+  font-size: 16px;
+  margin: 0 6px;
+  transition: 0.3s;
+}
+
+.team-social a:hover {
+  color: rgba(254, 252, 252, 0.9);
+}
+
+/* Hover effect */
+.team-img:hover .team-overlay {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.contact-section {
+  padding: 80px 0;
+  background: #fff;
+}
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+.section-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.section-title .tag {
+  display: inline-block;
+  background: #fdebed;
+  color: #e63946;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+.section-title h2 {
+  font-size: 32px;
+  margin-top: 10px;
+  color: #333;
+}
+.section-title h2 span {
+  color: #e63946;
+}
+.map-box iframe {
+  width: 100%;
+  height: 350px;
+  border: 0;
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+.contact-content {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 40px;
+}
+.contact-info .info-item {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+.contact-info .icon {
+  width: 45px;
+  height: 45px;
+  background: #e63946;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 18px;
+}
+.contact-info h4 {
+  margin: 0 0 5px;
+  font-size: 16px;
+}
+.contact-info p {
+  margin: 0;
+  color: #666;
+  font-size: 14px;
+}
+.contact-form {
+  background: #fff;
+}
+
+.contact-form .row {
+  display: flex;
+  gap: 20px;
+}
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 14px;
+}
+.contact-form textarea {
+  height: 120px;
+  resize: none;
+}
+.contact-form button {
+  background: #e63946;
+  color: #fff;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 14px;
+}
+.contact-form button:hover {
+  background: #d62839;
+}
+@media (max-width: 992px) {
+  .contact-content {
+    grid-template-columns: 1fr;
+  }
+  .contact-form .row {
+    flex-direction: column;
+  }
+}
+.footer {
+  background: #000;
+  color: #fff;
+  padding-top: 60px;
+  font-family: Arial, sans-serif;
+}
+.footer .container {
+  max-width: 100%;
+  width: 100%;
+  padding: 0 40px;
+}
+footer {
+  margin-bottom: -100px;
+  margin-top: 35px;
+}
+.footer-top {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1.2fr;
+  gap: 40px;
+  padding-bottom: 40px;
+}
+.footer-box h2.logo {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+.footer-box h4 {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+.footer-box p {
+  font-size: 14px;
+  color: #ccc;
+  line-height: 1.7;
+}
+.footer-box ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.footer-box ul li {
+  margin-bottom: 10px;
+}
+.footer-box ul li a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 14px;
+}
+.footer-box ul li a:hover {
+  color: #e63946;
+}
+.social-links {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+.social-links a {
+  width: 36px;
+  height: 36px;
+  border: 1px solid #444;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ccc;
+  text-decoration: none;
+  font-size: 14px;
+}
+.social-links a:hover {
+  background: #e63946;
+  border-color: #e63946;
+  color: #fff;
+}
+
+.footer-bottom {
+  background: #111;
+  text-align: center;
+  padding: 20px 10px;
+  font-size: 14px;
+}
+
+.footer-bottom p {
+  margin: 5px 0;
+}
+
+.footer-bottom .credit span {
+  color: #e63946;
+}
+
+
+@media (max-width: 992px) {
+  .footer-top {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer-top {
+    grid-template-columns: 1fr;
+  }
+}
